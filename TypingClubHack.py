@@ -17,7 +17,7 @@ def error (errorNum):
 
 def controlKeyboard():
     AccuracyControl = random.randint(90,97)
-    for char in '''Seawater cannot be drunk safely because it has high salinity, or concentration of salt. Seawater is also called salt water. Both people and animals often live near rivers, because they need water to survive. The water in a river is called fresh water. Fresh water comes from rain or snow and it can usually be drunk safely, unless it has been polluted.''':
+    for char in '''At first, Washington D.C. was made up of a piece of Virginia located south of the Potomac River and a piece of Maryland located north of the Potomac River. In 1847, Virginia's land was returned to it. This area is now part of Arlington County. Since 1847, all of Washington D.C. is on the north side of the Potomac River.''':
         errorFactor = random.randint(0,100)
         if errorFactor <= AccuracyControl:
             keyboard.press(char)
@@ -26,7 +26,7 @@ def controlKeyboard():
             errorChar = error(random.randint(0,60))
             keyboard.press(errorChar)
             keyboard.release(errorChar)
-        delay = random.uniform(0.09,0.18)
+        delay = random.uniform(0.07,0.15)
         time.sleep(float(delay))
         print(char)
         print(delay)
