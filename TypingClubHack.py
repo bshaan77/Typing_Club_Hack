@@ -17,7 +17,7 @@ def error (errorNum):
 
 def controlKeyboard():
     AccuracyControl = random.randint(90,97)
-    for char in '''"The most difficult thing is the decision to act, the rest is merely tenacity." Amelia Earhart was the first female aviator to fly solo across the Atlantic Ocean. In 1937, Earhart disappeared over the central Pacific Ocean near Howland Island when attempting to make a circumnavigational flight around the globe.''':
+    for char in '''Seawater cannot be drunk safely because it has high salinity, or concentration of salt. Seawater is also called salt water. Both people and animals often live near rivers, because they need water to survive. The water in a river is called fresh water. Fresh water comes from rain or snow and it can usually be drunk safely, unless it has been polluted.''':
         errorFactor = random.randint(0,100)
         if errorFactor <= AccuracyControl:
             keyboard.press(char)
