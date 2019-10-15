@@ -17,7 +17,9 @@ def error (errorNum):
 
 def controlKeyboard():
     AccuracyControl = random.randint(83,95)
-    for char in '''The judicial branch of the U.S. government is made up of the court system. The Supreme Court is the highest court in the country. The 9 justices are nominated by the president and must be approved by the Senate (with at least 51 votes). There are lower Federal courts that were created by Congress using power granted from the Constitution.''':
+    for char in '''Education is about teaching, learning skills, and acquiring knowledge. Education also means helping people to learn how to do things and encouraging them to think about what they learn. It is important for educators to teach ways to find and use information. Through education, the knowledge of societies, countries, and of the world is passed on from generation to generation.
+
+''':
         errorFactor = random.randint(0,100)
         if errorFactor <= AccuracyControl:
             keyboard.press(char)
